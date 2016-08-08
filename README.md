@@ -1,7 +1,7 @@
 # passwordmeter-studycase
 Application that calculates the strength of a given password, following diverses criterias like typing sequential characters or lack of symbols in it.
 
-This application was based on <a href="http://www.passwordmeter.com/">The Password Meter</a> application. It uses the same criterias for calculing the strength of a given password.
+This application was based on <a href="http://www.passwordmeter.com/">The Password Meter</a> application. It uses the same criterias for calculating the strength of a given password.
 
 Used technologies: 
 <ul>
