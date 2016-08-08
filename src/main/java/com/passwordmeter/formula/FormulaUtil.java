@@ -2,6 +2,7 @@ package com.passwordmeter.formula;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -48,6 +49,6 @@ public final class FormulaUtil {
         }
         formulas.add(new Requirements(this.additionFormulas()));
         
-        return formulas;
+        return Collections.unmodifiableList(formulas);
     }
 }
