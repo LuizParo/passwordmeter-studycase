@@ -8,6 +8,7 @@ import com.passwordmeter.model.BonusResult;
 import com.passwordmeter.model.Password;
 import com.passwordmeter.model.StatusValidation;
 
+@Bonus(type = BonusType.ADDITION)
 public class Requirements implements Formula {
     private static final int RATE = 2;
     private List<Formula> formulas = new ArrayList<>();

@@ -3,10 +3,10 @@ package com.passwordmeter.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.passwordmeter.formula.FormulaUtil;
 import com.passwordmeter.model.Password;
 import com.passwordmeter.model.PasswordStrengthCalculator;
 import com.passwordmeter.model.ScoreResult;
+import com.passwordmeter.util.FormulaUtil;
 import com.passwordmeter.vo.ScoreResultVO;
 
 @Service

@@ -6,6 +6,7 @@ import com.passwordmeter.model.BonusResult;
 import com.passwordmeter.model.Password;
 import com.passwordmeter.model.StatusValidation;
 
+@Bonus(type = BonusType.ADDITION)
 public class MiddleNumberOrSymbols implements Formula {
     private static final int RATE = 2;
 

@@ -7,6 +7,7 @@ import com.passwordmeter.model.Password;
 import com.passwordmeter.model.StatusValidation;
 import com.passwordmeter.util.StringUtils;
 
+@Bonus(type = BonusType.DEDUCTION)
 public class ConsecutiveUppercaseLetters implements Formula {
     private static final int RATE = 2;
 

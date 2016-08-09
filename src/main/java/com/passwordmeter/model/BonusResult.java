@@ -2,7 +2,7 @@ package com.passwordmeter.model;
 
 import java.util.Objects;
 
-public class BonusResult {
+public final class BonusResult {
     private final int bonus;
     private final StatusValidation status;
     

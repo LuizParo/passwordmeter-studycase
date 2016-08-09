@@ -6,6 +6,7 @@ import com.passwordmeter.model.BonusResult;
 import com.passwordmeter.model.Password;
 import com.passwordmeter.model.StatusValidation;
 
+@Bonus(type = BonusType.DEDUCTION)
 public class LettersOnly implements Formula {
 
     @Override
