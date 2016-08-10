@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
 public @interface Bonus {
     
     /**
-     * 
+     * Type of the bonus.
      * @return {@link BonusType} that defines if the bonus is an addition or deduction.
      */
     BonusType type() default BonusType.ADDITION;

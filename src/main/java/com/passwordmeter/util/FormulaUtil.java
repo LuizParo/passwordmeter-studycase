@@ -26,10 +26,10 @@ import com.passwordmeter.formula.Requirements;
 public final class FormulaUtil {
     
     /**
-     * Method that dynamically searches for all the classes that implement the {@link Formula} interface,
-     * creates it and adds in the returned {@link List} implementation.
-     * It uses the Spring utility class {@link ClassPathScanningCandidateComponentProvider} to search for
-     * candidates of {@link Formula} interface based on its package declaration.
+     * Method that dynamically searches for all classes that implement the {@link Formula} interface,
+     * makes an instance for each and adds them in the returned {@link List} implementation.
+     * It uses the Spring utility class {@link ClassPathScanningCandidateComponentProvider} to search
+     * for candidates of {@link Formula} interface based on its package declaration.
      * 
      * @return list containing all the defined {@link Formula}s in application.
      */

@@ -4,11 +4,9 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.validation.constraints.NotNull;
-
 /**
- * Class that represents the password in application. It encapsulates the
- * <code>String</code> password typed on the main page and provide useful
+ * Class that represents the password in application. It encapsulates
+ * the {@link String} password typed on the main page and provides useful
  * methods for it.
  * 
  * @author Luiz Guilherme Paro
@@ -16,7 +14,9 @@ import javax.validation.constraints.NotNull;
  */
 public final class Password {
 
-    @NotNull
+    /**
+     * The string containing the typed password.
+     */
     private final String password;
 
     public Password(String password) {
