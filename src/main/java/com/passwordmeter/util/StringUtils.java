@@ -64,7 +64,7 @@ public final class StringUtils {
      * or the numbers from 0 to 9 and return the number of occurrences -2 (The first two
      * characters are ignored in the return).
      * 
-     * <p>Example</p>
+     * <p>Example:</p>
      * 
      * <p>Word: abcdefgh</p>
      * <p>Sequence: abcdefghijklmnopqrstuvwxyz</p>
@@ -97,7 +97,7 @@ public final class StringUtils {
     }
     
     /**
-     * Helper method to reverses the given {@link String}.
+     * Helper method to reverses the given {@link String} parameter.
      * 
      * @param string - {@link String} that need to be reversed.
      * @return the reversed {@link String}
