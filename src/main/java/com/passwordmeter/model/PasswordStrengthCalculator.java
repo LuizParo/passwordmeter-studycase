@@ -5,6 +5,17 @@ import java.util.List;
 
 import com.passwordmeter.formula.Formula;
 
+/**
+ * Class responsible for calculating the strength of a given password based on a list of
+ * {@link Formula}s and return its strength percentage and complexity encapsulated in an
+ * {@link ScoreResult}.
+ * 
+ * @author Luiz Guilherme Paro
+ * 
+ * @see Formula
+ * @see Complexity
+ * @see ScoreResult
+ */
 public class PasswordStrengthCalculator {
     private List<Formula> formulas = new ArrayList<>();
     
@@ -28,7 +39,7 @@ public class PasswordStrengthCalculator {
     }
 
     private Complexity calculteComplexity(int strength) {
-        if(strength < 0 || (strength >= 0 && strength < 20)) {
+        if(strength < 20) {
             return Complexity.VERY_WEAK;
         }
         if(strength >= 20 && strength < 40) {
@@ -39,9 +50,6 @@ public class PasswordStrengthCalculator {
         }
         if(strength >= 60 && strength < 80) {
             return Complexity.STRONG;
-        }
-        if(strength >= 80 && strength <= 100) {
-            return Complexity.VERY_STRONG;
         }
         return Complexity.VERY_STRONG;
     }
