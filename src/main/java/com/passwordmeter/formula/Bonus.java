@@ -11,8 +11,8 @@ import com.passwordmeter.util.FormulaUtil;
  * This annotation defines if a {@link Formula} is responsible for calculating
  * an addition or deduction bonus for password strength.
  * 
- * <strong>This annotation is essential for auto-instantiation of the {@link Formula}
- * by {@link FormulaUtil#allFormulas()}, without it, the {@link Formula} will have to
+ * <strong>This annotation is essential for {@link Formula}'s auto-instantiation by
+ * {@link FormulaUtil#allFormulas()}, without it, the {@link Formula} will have to
  * be instantiated manually.</strong>
  * 
  * @author Luiz Guilherme Paro
