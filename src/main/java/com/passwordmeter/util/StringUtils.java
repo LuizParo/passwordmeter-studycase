@@ -11,7 +11,7 @@ import com.passwordmeter.formula.SequentialSymbols;
 /**
  * Utility class used by {@link Formula}s instances to manipulate {@link String} objects.
  * 
- * @author LuizGuilherme
+ * @author Luiz Guilherme Paro
  */
 public final class StringUtils {
     
