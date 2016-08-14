@@ -27,6 +27,6 @@ public class PasswordStrengthCalculatorController {
             password = Optional.of("");
         }
         ScoreResultVO scoreResultVO = this.service.calculateStrength(password.get());
-        return new ResponseEntity<ScoreResultVO>(scoreResultVO, HttpStatus.OK);
+        return new ResponseEntity<>(scoreResultVO, HttpStatus.OK);
     }
 }
