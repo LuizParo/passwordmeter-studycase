@@ -1,5 +1,14 @@
 package com.passwordmeter.vo;
 
+import com.passwordmeter.model.ScoreResult;
+
+/**
+ * A Value Object class for {@link ScoreResult}.
+ * 
+ * @author Luiz Guilherme Paro
+ * 
+ * @see ScoreResult
+ */
 public final class ScoreResultVO {
     private final int strength;
     private final String complexity;

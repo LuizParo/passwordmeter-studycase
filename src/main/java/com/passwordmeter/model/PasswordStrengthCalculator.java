@@ -30,7 +30,7 @@ public class PasswordStrengthCalculator {
             return new ScoreResult(strength, Complexity.TOO_SHORT);
         }
         
-        for (Formula formula : formulas) {
+        for (Formula formula : this.formulas) {
             BonusResult bonus = formula.calculateBonus(password);
             strength += bonus.getBonus();
         }
