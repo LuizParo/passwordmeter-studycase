@@ -26,7 +26,7 @@ public class PasswordStrengthCalculator {
     public ScoreResult calculateStrength(Password password) {
         int strength = 0;
         
-        if(password.getPasswordLength() == 0) {
+        if(password.isPasswordEmpty()) {
             return new ScoreResult(strength, Complexity.TOO_SHORT);
         }
         

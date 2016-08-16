@@ -127,6 +127,10 @@ public final class Password {
     public boolean isNumbersOnly() {
         return this.password.matches("[\\d]+");
     }
+    
+    public boolean isPasswordEmpty() {
+        return this.getPasswordLength() == 0;
+    }
 
     @Override
     public int hashCode() {
