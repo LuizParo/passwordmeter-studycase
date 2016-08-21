@@ -20,7 +20,10 @@ public interface Formula {
      * both informations.
      * 
      * @param password - The password that needs to be checked against the criteria
-     * @return a {@link BonusResult} containing the calculus result.
+     * 
+     * @return a {@link BonusResult} containing the calculus result
+     * 
+     * @throws NullPointerException if {@link Password} is null
      * 
      * @see BonusResult
      * @see StatusValidation

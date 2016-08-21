@@ -20,7 +20,7 @@ public class PasswordStrengthCalculatorTest {
     
     @Before
     public void setUp() {
-        this.passwordStrengthCalculator = new PasswordStrengthCalculator(formulaUtil.allFormulas());
+        this.passwordStrengthCalculator = new PasswordStrengthCalculator(this.formulaUtil.allFormulas());
     }
     
     @Test

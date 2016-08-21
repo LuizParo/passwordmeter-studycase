@@ -19,6 +19,12 @@ public final class Password {
      */
     private final String password;
 
+    /**
+     * Constructor that receives the {@link String} password.
+     * 
+     * @param password - {@link String} representing the password
+     * @throws NullPointerException if password is null
+     */
     public Password(String password) {
         this.password = Objects.requireNonNull(password, "password cannot be null");
     }
@@ -71,7 +77,7 @@ public final class Password {
     
     private int getQuantityOfSpecialCharacters0(String password) {
         int quantity = 0;
-        Pattern pattern = Pattern.compile("[^a-zA-Z0-9_ ]+");
+        Pattern pattern = Pattern.compile("[^a-zA-Z0-9_\\s]+");
         
         for (char character : password.toCharArray()) {
             Matcher matcher = pattern.matcher(String.valueOf(character));
